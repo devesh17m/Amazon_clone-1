@@ -1,6 +1,6 @@
 import React from "react";
 import "./Product.css";
-function Product ({title}){
+function Product ({title,image1,image2,image3,image4,category1,category2,category3,category4}){
     return (
         <div className="product">
             <div className="product_info"> <strong>{title} </strong>
@@ -10,26 +10,36 @@ function Product ({title}){
             <div className="product_image">
                     
                    <div className="img"><img 
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/kitchen/JanART22/GW/PC/186x116_1._SY116_CB647230943_.jpg"/>
+                    src={image1}
+                    alt=""
+                    />
                     <p className="Product_Category">
-                        <small>Cookware</small> </p></div>
+                        <small>{category1}</small> </p></div>
+                        
             
             
                     <img   
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/kitchen/JanART22/GW/PC/186x116_4._SY116_CB647230943_.jpg"/>
-                    <p className="Product_Category"><small>Storage jars & containers</small> </p>
+                    src={image2}
+                    alt=""/>
+                    
+                    <p className="Product_Category"><small>{category2}</small> </p>
+                    
             </div>
             <div className="product_image">     
                     <img 
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/kitchen/JanART22/GW/PC/186x116_3._SY116_CB647230943_.jpg"/>
+                    src={image3}
+                    alt=""
+                    />
                     <p className="Product_Category">
-                        <small>Chopper & more tools</small> </p>
+                        <small>{category3}</small> </p>
             
                      
                     <img  
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/kitchen/JanART22/GW/PC/186x116_2._SY116_CB647230943_.jpg"/>
+                    src={image4}
+                    alt=""
+                    />
                     <p className="Product_Category">
-                        <small>Gasstoves</small> </p>
+                        <small>{category4}</small> </p>
 
 
             </div>           
