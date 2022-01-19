@@ -4,7 +4,7 @@ import Headder from './Headder';
 import Home from "./Home"
 import  { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 
-
+import Footer from "./Footer"
 
 function App(){
     return(
@@ -21,9 +21,12 @@ function App(){
                     <Headder />
                     <Home />
                 </Route>
+               
             </Switch>
+            <Footer/>
         </div>
         </Router>
+        
     );
 }
 
